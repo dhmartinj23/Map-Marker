@@ -11,11 +11,6 @@ from PIL import Image
 import pandas_bokeh
 import os
 
-
-
-
-folder = 'D:\OneDrive\OneDrive - Ashok Leyland Ltd\python codes\Map Marker/'
-
 if 'init' not in st.session_state: st.session_state['init']=False
 if 'store' not in st.session_state: st.session_state['store']={}
 if 'store_d' not in st.session_state: st.session_state['store_d']={}
@@ -32,7 +27,6 @@ def fetch_data():
 def saveDefault():
     st.session_state.store_d = st.session_state.store
     return
-
 
 primaryColor="#2214c7"
 backgroundColor="#ffffff"
@@ -166,8 +160,3 @@ if key is not None:
 st.map(map_df)
 # st.sidebar.write(map_df)        
 # os.path.dirname(os.path.abspath(str(key.name)+".html"))
-
-  
-	
-
-
