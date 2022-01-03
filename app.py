@@ -148,7 +148,7 @@ if key is not None:
                               tile_provider="OSM",
                               hovertool_string="""<h2> @{} </h2> 
                                                   <h3> Lat Long: @{} , @{}  </h3>                                     
-                                                  <h3>  @{} </h3>""".format(None,lat,lon,time_),
+                                                  <h3>  @{} </h3>""".format(None,"lat","lon",time_),
                             # size="size", 
                             figsize=(1300, 650),
                             # dropdown=["j", "i"],
