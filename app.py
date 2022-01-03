@@ -143,12 +143,12 @@ if key is not None:
     
     if st.button("Export html"):
         pandas_bokeh.output_file(os.path.dirname(os.path.abspath(str(key.name)+".html")))
-        p = pandas_bokeh.output_notebook
-        map_df.plot_bokeh.map(x=str(long_), y=str(lat_),
+        #p = pandas_bokeh.output_notebook
+        map_df.plot_bokeh.map(x="lat", y="lon",
                               tile_provider="OSM",
                               hovertool_string="""<h2> @{} </h2> 
                                                   <h3> Lat Long: @{} , @{}  </h3>                                     
-                                                  <h3>  @{} </h3>""".format(None,lat_,long_,time_),
+                                                  <h3>  @{} </h3>""".format(None,lat,lon,time_),
                             # size="size", 
                             figsize=(1300, 650),
                             # dropdown=["j", "i"],
